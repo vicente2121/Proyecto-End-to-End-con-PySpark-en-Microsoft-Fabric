@@ -61,14 +61,11 @@ Analizar datos de inventario, entregas, productos y proveedores con un enfoque l
 ## 📊 Visualización en Power BI
 
 Se diseñó un dashboard con los siguientes indicadores:
+Total de Inventario Disponible
+Promedio de Días de Entrega
+Ranking de Productos por Precio en su Categoría
 
-- Total de registros e inventario
-- Ranking de productos por categoría y precio
-- Proveedores con más entregas tardías
-- Promedios de días de entrega
-- Distancias totales y rutas frecuentes
-
-![Dashboard Power BI](Visualizaacion.png)
+![Dashboard Power BI](Visulizaacion.png)
 
 ---
 
@@ -81,3 +78,14 @@ Durante la etapa de análisis, se crearon medidas clave en DAX para responder pr
 ```DAX
 Pregunta 1 = 
     CALCULATE(SUM(fact_inventario[Cantidad_Inventario]))
+Pregunta 2 = 
+AVERAGE(fact_inventario[Días_Entrega])
+Pregunta 3 = 
+RANKX(
+    FILTER(ALL(dim_producto), dim_producto[Categoria] = MAX(dim_producto[Categoria])),
+    CALCULATE(MAX(fact_inventario[Precio_Unitario])),
+    ,
+    DESC
+)
+
+

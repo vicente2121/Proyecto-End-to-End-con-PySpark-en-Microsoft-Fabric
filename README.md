@@ -30,7 +30,7 @@ Analizar datos de inventario, entregas, productos y proveedores con un enfoque l
 - Carga directa de un archivo Excel (“FP 20 RETO ABRIL”) al **Lakehouse** sin transformaciones.
 - Conservación de datos originales para trazabilidad y respaldo histórico.
 
-![Capa Bronce](imagenes/capabronce.png)
+![Capa Bronce](capabronce.png)
 
 ---
 
@@ -42,7 +42,7 @@ Analizar datos de inventario, entregas, productos y proveedores con un enfoque l
   - Conversión de tipos y estandarización
 - Carga a un **Data Warehouse** para modelado.
 
-![Capa Plata](imagenes/Capasilver.png)
+![Capa Plata](Capasilver.png)
 
 ---
 
@@ -53,8 +53,8 @@ Analizar datos de inventario, entregas, productos y proveedores con un enfoque l
   - Tablas de dimensiones: Producto, Proveedor, Cliente, Transporte, Origen, Destino, Material, Calendario
 - Desarrollo de un **modelo semántico** conectado a Power BI para exploración de datos.
 
-![Capa Oro](imagenes/capagold.png)
-![Modelo Final](imagenes/modelofinal.png)
+![Capa Oro](capagold.png)
+![Modelo Final](modelofinal.png)
 
 ---
 
@@ -68,7 +68,7 @@ Se diseñó un dashboard con los siguientes indicadores:
 - Promedios de días de entrega
 - Distancias totales y rutas frecuentes
 
-![Dashboard Power BI](imagenes/Visualizaacion.png)
+![Dashboard Power BI](Visualizaacion.png)
 
 ---
 
